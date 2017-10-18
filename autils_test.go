@@ -17,3 +17,6 @@ func Test_RandomString(t *testing.T) {
 		t.Error("error")
 	}
 }
+func Test_GetUUID(t *testing.T) {
+	t.Log(GetUUID())
+}

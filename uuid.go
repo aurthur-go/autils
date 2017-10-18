@@ -12,13 +12,11 @@ import (
 	"time"
 )
 
-// Code inspired from mgo/bson ObjectId
-
 // ID represents a unique request id
 type ID [rawLen]byte
 
 const (
-	encodedLen = 32 // string encoded len
+	encodedLen = 20 // string encoded len
 	decodedLen = 15 // len after base32 decoding with the padded data
 	rawLen     = 12 // binary raw len
 
