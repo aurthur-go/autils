@@ -18,7 +18,7 @@ import (
 type ID [rawLen]byte
 
 const (
-	encodedLen = 20 // string encoded len
+	encodedLen = 32 // string encoded len
 	decodedLen = 15 // len after base32 decoding with the padded data
 	rawLen     = 12 // binary raw len
 
